@@ -182,6 +182,7 @@ https://forums.raspberrypi.com/viewtopic.php?t=91233
 https://code.google.com/archive/p/polarhrm/wikis/IRDA_Information.wiki
 https://wiki-ubuntu--it-org.translate.goog/Hardware/DispositiviSenzaFili/Infrarosso?highlight=(irda)&_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en
 https://wiki-ubuntu--it-org.translate.goog/Hardware/DispositiviSenzaFili/Infrarosso?highlight=(irda)&_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en
+https://help.ubuntu.com/community/IrdaHowto
 
 https://wiki.winehq.org/Wine_User%27s_Guide#Getting_Wine
 https://wiki.winehq.org/Wine_User%27s_Guide#Wine_from_WineHQ
@@ -271,6 +272,8 @@ fresh install
 2.) Get irda-utils and wine
 
 	- sudo apt-get install wine irda-utils
+
+3.) Enjoy!
 
 
 In the meantime I have installed an old Ubuntu (14.04), where the irda stack was still included. To my greatest amusement, surprise and celebration, it has worked right away with the simple description from here: http://www.jbackes.de/wiki/doku.php?id=polar_protrainer_5_wine
