@@ -1,0 +1,360 @@
+I have made these steps to make IrDA on Linux Mint to work
+0.) preparations 
+    - Plug in IrDA device
+    - lsusb
+    > Bus 002 Device 003: ID 9710:7780 MosChip Semiconductor MCS7780 4Mbps Fast IrDA Adapter
+    - ifconfig irda0
+    > irda0: error fetching interface information: Device not found
+    - ls /dev
+    > no irda or ircomm device
+    - lsmod | grep irda
+    > nothing
+    - sudo find / -name "irda"
+    > nothing
+    - sudo find / -name "ircom"
+    > nothing
+    - ip a
+
+
+
+
+1.)Steps based on the following links:
+https://groups.google.com/g/subsurface-divelog/c/sLQ4QKUK34Y
+http://www.jbackes.de/wiki/doku.php?id=polar_protrainer_5_wine
+https://forums.linuxmint.com/viewtopic.php?t=68614
+https://guriandersen.no/polar-pulse-watch-infrared-communication-and-ubuntu/
+
+a.) irda stack stack have been removed after 2018 from linux kernel (v 4.17)
+    - The out of tree irda stack is buildable on recent kernels using the repository at: https://github.com/cschramm/irda
+    - Follow the instructions on the readme to get the kernel modules built:
+    - make sure the kernel headers for your current kernel are installed (it's relatively straightforward, google it or install the linux-headers- package for your current kernel)
+    - clone the repo: marton@DMLaptop:~/Downloads$ git clone https://github.com/cschramm/irda.git   
+    - cd into the created folder (irda)
+    - $ autoconf
+    - ./configure
+    - mmarton@DMLaptop:~/Downloads/irda$ sudo dkms add ~/Downloads/irda/src
+    - marton@DMLaptop:~/Downloads/irda$ sudo dkms install "irda/$(git show --pretty=format:"%cd~%h" --date="format:%Y%m%d" | head -1)"
+    - check success of connection with marton@DMLaptop:~$ lsmod | grep irda
+irda                  270336  1 mcs7780
+
+
+    !The irda module requires Appletalk protocol support to be enabled (AFP a logban)
+    - sudo find / -name "appletalk"
+    > /usr/src/linux-headers-5.15.0-88/drivers/net/appletalk
+    /usr/src/linux-headers-5.15.0-88/net/appletalk
+    /usr/src/linux-headers-5.15.0-76/drivers/net/appletalk
+    /usr/src/linux-headers-5.15.0-76/net/appletalk
+    /usr/lib/modules/5.15.0-88-generic/kernel/drivers/net/appletalk
+    /usr/lib/modules/5.15.0-88-generic/kernel/net/appletalk
+    /usr/lib/modules/5.15.0-76-generic/kernel/drivers/net/appletalk
+    /usr/lib/modules/5.15.0-76-generic/kernel/net/appletalk
+    !Maybe try to install netatalk for appletalk protocol: https://help.ubuntu.com/community/AppleTalk
+    - clone the repo:
+        - git clone https://github.com/cschramm/irda.git
+    - cd intto the created folder (irda)
+    - BUILD
+        - make -C src
+    - DKMS
+        - autoconf -f && ./configure
+        - sudo dkms add src
+        - sudo dkms install "irda/$(git show --pretty=format:"%cd~%h" --date="format:%Y%m%d" | head -1)"
+    - dmesg
+        [ 3531.890573] usb 2-2: USB disconnect, device number 4
+        [ 3535.179992] usb 2-2: new full-speed USB device number 5 using xhci_hcd
+        [ 3535.328320] usb 2-2: New USB device found, idVendor=9710, idProduct=7780, bcdDevice= 0.01
+        [ 3535.328324] usb 2-2: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+!        [ 3535.345377] irda: module verification failed: signature and/or required key missing - tainting kernel   <---according to developer of the irda stack, this is normal
+        [ 3535.347806] NET: Registered PF_IRDA protocol family
+        [ 3535.349866] usbcore: registered new interface driver mcs7780
+    - ip a
+!    > 4: irda0: <NOARP> mtu 2048 qdisc noop state DOWN group default qlen 8
+    link/irda 00:00:00:00 brd ff:ff:ff:ff   <---this is not exactly as in the description
+     
+        
+
+
+b.) install the package irda-utils
+    This is not available in the packagamanager anymore!
+    - Download source from here: https://sourceforge.net/projects/irda/files/
+    - unpack
+    - cd into the dir
+    - make
+        - several files have to be corrected because of errors in compiling
+    - make install
+!        - irdadump does not install
+!    - many things are not installed therefor .deb is installed from here https://ubuntu.pkgs.org/20.04/ubuntu-main-amd64/irda-utils_0.9.18-15ubuntu1_amd64.deb.html
+        - sudo dpkg -i irda-utils_0.9.18-15ubuntu1_amd64.deb
+
+c.) add my user to the grous "dialout" and "tty"
+    - groups
+    if "dialout" and "tty" does not appear, than
+    - sudo adduser <your_user> dialout
+    - sudo adduser <your_user> tty
+    - REBOOT!!!
+    - check the new groups with: group
+
+d.) attaching irda device
+    - unplug, replug device
+    - sudo irattach irda0 -s
+    - check
+        - ip a
+        > 6: irda0: <NOARP,UP,LOWER_UP> mtu 2048 qdisc fq_codel state UNKNOWN group default qlen 8
+    link/irda 34:43:26:c3 brd ff:ff:ff:ff
+        <-- now it is good!
+
+2.) Install wine: https://wiki.winehq.org/Download
+
+
+
+
+How to instal irda to modern linux mint
+
+
+
+
+
+
+Install winetricks https://github.com/Winetricks/winetricks
+cd "$(mktemp -d)"
+cat > update_winetricks <<_EOF_SCRIPT
+#!/bin/sh
+
+cd "\$(mktemp -d)"
+wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
+wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks.bash-completion
+chmod +x winetricks
+su root sh -c 'mv winetricks /usr/bin ; mv winetricks.bash-completion /usr/share/bash-completion/completions/winetricks'
+_EOF_SCRIPT
+
+chmod +x update_winetricks
+su root sh -c 'mv update_winetricks /usr/bin/'
+
+
+sudo nano /etc/init.d/irda-setup
+
+
+
+Polar Pro Trainer Install with Setup
+Overwrite in the program folder the files with the update zip content to be updatet to 5.42.006
+
+sudo /etc/init.d/irda-utils restart
+
+(irattach /dev/ttySX for SIR vs irattach irdaX for FIR) 
+sudo irattach irda0 -s
+
+lsusb -> Bus 002 Device 002: ID 9710:7780 MosChip Semiconductor MCS7780 4Mbps Fast IrDA Adapter
+modinfo mcs7780
+
+Ezzel megjelennek az ircommok a /dev/ -ben: sudo modprobe ircomm-tty
+
+Ezzel beindul az irdadump: cat < /dev/ircomm0
+csekkolni a forgalmat: ifconfig irda0
+
+
+
+
+
+
+LINKS
+RS400 tools archive: https://web.archive.org/web/20080421195926/http://trac.enneu.net:80/rs400, írtam neki mailt
+S710 tool: https://code.google.com/archive/p/s710/
+Alternative to PP5 http://www.traininglab.com/test/traininglab-pro-software/
+Polar F55 link collection https://web.archive.org/web/20110115022645/http://users.tkk.fi/jjvayryn/polar_f55_hrm.html
+Mapping com port https://wiki.winehq.org/Wine_User%27s_Guide#Serial_and_Parallel_Ports
+
+format előtt a böngészőből
+https://forums.linuxmint.com/viewtopic.php?t=68614
+http://www.jbackes.de/wiki/doku.php?id=polar_protrainer_5_wine
+https://guriandersen.no/polar-pulse-watch-infrared-communication-and-ubuntu/
+https://manpages.debian.org/stretch/irda-utils/irattach.8.en.html
+https://www.hpl.hp.com/personal/Jean_Tourrilhes/IrDA/IrDA.html
+https://www.opennet.ru/docs/HOWTO/Infrared-HOWTO/
+https://web.archive.org/web/20080613224859/http://www.traduc.org/docs/HOWTO/lecture/IR-HOWTO.html
+https://web.archive.org/web/20050308092516/http://www.freenix.org/unix/linux/HOWTO/IR-HOWTO.html#toc1
+https://groups.google.com/g/subsurface-divelog/c/sLQ4QKUK34Y/m/TG1PYlVwBAAJ
+https://bugs.winehq.org/show_bug.cgi?id=19397
+http://www.alanjmcf.me.uk/comms/infrared/Windows
+http://www.alanjmcf.me.uk/comms/infrared/Windows%20irdadump%20port/
+https://ubuntuforums.org/showthread.php?t=524631
+https://code.google.com/archive/p/s710/issues/4
+https://appdb.winehq.org/objectManager.php?sClass=version&iId=8183&iTestingId=84016&bShowAll=true
+https://forums.raspberrypi.com/viewtopic.php?t=91233
+https://code.google.com/archive/p/polarhrm/wikis/IRDA_Information.wiki
+https://wiki-ubuntu--it-org.translate.goog/Hardware/DispositiviSenzaFili/Infrarosso?highlight=(irda)&_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en
+https://wiki-ubuntu--it-org.translate.goog/Hardware/DispositiviSenzaFili/Infrarosso?highlight=(irda)&_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en
+
+https://wiki.winehq.org/Wine_User%27s_Guide#Getting_Wine
+https://wiki.winehq.org/Wine_User%27s_Guide#Wine_from_WineHQ
+https://wiki.winehq.org/Ubuntu
+https://wiki.winehq.org/Winetricks
+
+
+Alternatives to Polar ProTrainer 5
+https://pppsw-online.sourceforge.net/
+
+
+/*replacing #include <asm/io.h> with #include <sys/io.h> based on https://stackoverflow.com/questions/1953562/include-asm-io-h-causes-error-asm-io-h-no-such-file-or-directory*/
+#include <sys/io.h>
+
+/*adding this based on https://github.com/LibtraceTeam/libtrace/commit/cd7f4c79aa55823d2e3be9b753088c40bc44d183*/
+#include <linux/sockios.h>
+
+
+/*adding this to avoid warnings*/
+#include <glib.h>
+
+
+
+
+Creating WINEPREFIX "/home/marton/.local/share/wineprefixes/win7_32" with WINEARCH=win32
+
+
+UNDER UBUNTU
+fresh install 
+1. plug in IrDA and see what the following commands result
+	- ip a
+	> 4: irda0: <NOARP> mtu 2048 qdisc noop state DOWN group default qlen 8
+    link/irda 00:00:00:00 brd ff:ff:ff:ff
+	- ifconfig irda0
+	> irda0     Link encap:IrLAP  HWaddr 00:00:00:00  
+          NOARP  MTU:2048  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:8 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+!	- lsmod | grep irda
+	> irda                  196608  1 mcs7780
+!	  crc_ccitt              16384  2 irda,mcs7780	<-- this does not appear in mint
+	- dmesg
+	>	[  242.260735] usb 2-2: new full-speed USB device number 2 using xhci_hcd
+		[  242.389211] usb 2-2: New USB device found, idVendor=9710, idProduct=7780
+		[  242.389215] usb 2-2: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+		[  242.409508] NET: Registered protocol family 23
+		[  242.411622] usbcore: registered new interface driver mcs7780
+	- sudo find / -name "irda"
+	>	/sys/module/irda
+		/sys/module/crc_ccitt/holders/irda
+		/proc/sys/net/irda
+		/proc/1/task/1/net/irda
+		/proc/1/net/irda
+		/proc/2/task/2/net/irda
+		/proc/2/net/irda
+		/proc/3/task/3/net/irda
+		/proc/3/net/irda
+		/proc/5/task/5/net/irda
+		/proc/5/net/irda
+		/proc/7/task/7/net/irda
+		/proc/7/net/irda
+		..
+		/proc/3483/net/irda
+		/proc/3510/task/3510/net/irda
+		/proc/3510/net/irda
+		/proc/3515/task/3515/net/irda
+		/proc/3515/net/irda
+		/proc/3516/task/3516/net/irda
+		/proc/3516/net/irda
+		/usr/src/linux-headers-4.4.0-142-generic/include/config/irda
+		/usr/src/linux-headers-4.4.0-142/net/irda
+		/usr/src/linux-headers-4.4.0-142/include/net/irda
+		/usr/src/linux-headers-4.4.0-142/drivers/net/irda
+		/usr/src/linux-headers-4.4.0-148-generic/include/config/irda
+		/usr/src/linux-headers-4.4.0-148/net/irda
+		/usr/src/linux-headers-4.4.0-148/include/net/irda
+		l/usr/src/linux-headers-4.4.0-148/drivers/net/irda
+		es/lib/modules/4.4.0-148-generic/kernel/net/irda
+		s/lib/modules/4.4.0-148-generic/kernel/drivers/net/irda
+		/lib/modules/4.4.0-142-generic/kernel/net/irda
+		/lib/modules/4.4.0-142-generic/kernel/drivers/net/irda
+	- sudo find / -name "ircom"
+    	> nothing
+
+2.) Get irda-utils and wine
+
+	- sudo apt-get install wine irda-utils
+
+
+In the meantime I have installed an old Ubuntu (14.04), where the irda stack was still included. To my greatest amusement, surprise and celebration, it has worked right away with the simple description from here: http://www.jbackes.de/wiki/doku.php?id=polar_protrainer_5_wine
+
+I didn't even had to do irattach by myself. It took considerable longer to connect to the watch than on windows, so it was behaving very similar than on the latest Linux Mint. Than came the biggest surprise, the watch has appeared in the program and transfer has been started!
+
+So at least I have now a successful reference which keeps my hopes up that this thing could actually work under the latest linux distributions.
+
+The main differences that I have noticed between the countless unsuccessful tries and the latest successful one:
+=> S1. and S2. below represents Scenario 1 (successful) and Scenario 2 (unsuccesful)
+
+1. Linux distribution:
+	S1. Ubuntu 14.4
+	S2. Linux Mint 21.2
+
+2. Recognizing IrDA device when plugged in: 
+	S1. The IrDA device is recognized immediately thanks to the included irda stack. 
+		I get the following by "lsmod | grep irda"
+			irda                  196608  1 mcs7780
+			crc_ccitt              16384  2 irda,mcs7780 
+		=> the second line does not appear in S2. I don't know what this is and I could make it appear.
+	S2. I use your irda stack
+		I get the following by "lsmod | grep irda"
+			irda                  270336  1 mcs7780
+		
+3. No difference in dmesg (other than module signature verification fails by your irda stack)
+
+4. Way to install irda-utils: 
+	S1. "sudo apt -get install irda-utils" works like a charm
+	S2. irda-utils is not available in the packagamanager anymore! I do the following:
+		- Download source from here: https://sourceforge.net/projects/irda/files/
+		- unpack
+		- cd into the dir
+		- make
+			- several files have to be corrected because of errors in compiling!
+			- after correction errors disapper, but there are still warnings in irdadump for example
+		- make install
+	        	- irdadump does not install, the rest of the files do!
+		- many things are not installed therefor I ditch above method and download a .deb from here https://ubuntu.pkgs.org/20.04/ubuntu-main-amd64/irda-utils_0.9.18-15ubuntu1_amd64.deb.htm
+		- install the downloaded .deb
+	I might try the following next:
+		- S2.1 compile irda-utils from here: https://packages.ubuntu.com/search?keywords=irda-utils
+		- S2.2 do a clean install of the .deb file without trying to build from sourceforge
+
+5. Same in S1. and S2.
+	/etc/modprobe.d/irda-utils.conf
+		- add the following
+            alias irda0 mcs7780
+    /etc/default/irda-utils
+        - change the following
+            ENABLE="true"
+            DEVICE="irda0"
+            MAX_BAUD_RATE="9600"
+
+6. having to use "sudo irattach irda0 -s" to activate IrDA device
+    S1. no
+    S2. yes
+
+6. irdadump sees the Polar CS600x in both S1. and S2.
+
+8. wine installation
+	S1. "sudo apt -get install wine"
+		version wine1.6 1:1.6.2-0ubuntu4
+		version winetricks 0.0+20140302-0ubuntu2
+	S2. latest stable branch from https://wiki.winehq.org/Ubuntu (8.0.2)
+        no winetricks
+            
+
+9. "connecting" IrDA device to wine
+	S1. I did nothing at all
+		no additional device appears by "ls /dev"
+	S2. After irda connection was failing to work in wine I was trying to connect irda to com in regedit of wine.
+		a whole bunch of ircomm0, ircomm1, .. devices has appeared in /dev
+
+Result
+    S1. works
+    S2. closes the connection window in Polar ProTrainer 5 after a second
+        with various modification the connection window was longer open, but irdadump never got more exciting while trying to connect
+
+
+
+-----------
+
+> you can try make uninstall in the source to get rid of it and / or just clear ~/.local.
+
+I did a 2nd installation where I don't try to `make install`, but I directly install the downloaded .dev. That is where I got the result of 'Connection port couldn't get opened'.
+
