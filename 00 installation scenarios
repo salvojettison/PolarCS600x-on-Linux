@@ -25,6 +25,32 @@ Scenario 3 Ubuntu 20.04
             DEVICE="irda0"
             MAX_BAUD_RATE="9600"
 
+5.) - udevadm monitor
+	- attach IrDA device
+		result see in separate file
+
+6.) - journalctl -u systemd-udevd.service
+	- attach IrDA device
+		result see in separate file
+		Nov 05 14:04:49 Ubu20 mtp-probe[22409]: checking bus 2, device 9: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2"
+		Nov 05 14:04:49 Ubu20 mtp-probe[22409]: bus: 2, device: 9 was not an MTP device
+		Nov 05 14:04:49 Ubu20 mtp-probe[22420]: checking bus 2, device 9: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2"
+		Nov 05 14:04:49 Ubu20 mtp-probe[22420]: bus: 2, device: 9 was not an MTP device
+		Nov 05 14:04:49 Ubu20 systemd-udevd[22406]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+		Nov 05 14:04:49 Ubu20 irattach[22421]: executing: '/sbin/modprobe irda0'
+		Nov 05 14:04:49 Ubu20 irattach[22425]: executing: 'echo Ubu20 > /proc/sys/net/irda/devname'
+		Nov 05 14:04:49 Ubu20 irattach[22425]: executing: 'echo 1 > /proc/sys/net/irda/discovery'
+		Nov 05 14:04:49 Ubu20 irattach[22425]: Starting device irda0
+		Nov 05 14:04:49 Ubu20 irattach[22425]: socket(AF_IRDA): Address family not supported by protocol
+		Nov 05 14:04:49 Ubu20 irattach[22425]: Stopping device irda0
+		Nov 05 14:04:49 Ubu20 irattach[22425]: socket(AF_IRDA): Address family not supported by protocol
+		Nov 05 14:04:49 Ubu20 irattach[22425]: exiting ...
+
+7. - sudo irattach irda0 -s
+
+8. reboot
+
+
 
 I have made these steps to make IrDA on Linux Mint to work
 0.) preparations 
