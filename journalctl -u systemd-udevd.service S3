@@ -1,0 +1,73 @@
+marton@Ubu20:~/Downloads/irda$ journalctl -u systemd-udevd.service
+-- Logs begin at Sun 2023-11-05 00:02:33 CET, end at Sun 2023-11-05 14:39:46 CET. --
+Nov 05 00:02:33 Ubu20 systemd[1]: Starting udev Kernel Device Manager...
+Nov 05 00:02:33 Ubu20 systemd[1]: Started udev Kernel Device Manager.
+Nov 05 00:02:33 Ubu20 mtp-probe[322]: checking bus 2, device 6: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1.1/2-1.1.4"
+Nov 05 00:02:33 Ubu20 mtp-probe[322]: bus: 2, device: 6 was not an MTP device
+Nov 05 00:02:33 Ubu20 mtp-probe[329]: checking bus 2, device 6: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1.1/2-1.1.4"
+Nov 05 00:02:33 Ubu20 mtp-probe[329]: bus: 2, device: 6 was not an MTP device
+Nov 05 00:02:34 Ubu20 systemd-udevd[314]: Using default interface naming scheme 'v245'.
+Nov 05 00:02:34 Ubu20 systemd-udevd[314]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Nov 05 00:02:34 Ubu20 systemd-udevd[314]: Could not set AlternativeName= or apply AlternativeNamesPolicy= on eno1: File exists
+Nov 05 00:02:34 Ubu20 systemd-udevd[314]: eno1: Could not apply link config, ignoring: File exists
+Nov 05 00:02:34 Ubu20 mtp-probe[350]: checking bus 2, device 6: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1.1/2-1.1.4"
+Nov 05 00:02:34 Ubu20 mtp-probe[350]: bus: 2, device: 6 was not an MTP device
+Nov 05 00:02:34 Ubu20 mtp-probe[351]: checking bus 1, device 4: "/sys/devices/pci0000:00/0000:00:1d.0/usb1/1-1/1-1.6"
+Nov 05 00:02:34 Ubu20 mtp-probe[351]: bus: 1, device: 4 was not an MTP device
+Nov 05 00:02:34 Ubu20 systemd-udevd[301]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Nov 05 00:02:34 Ubu20 mtp-probe[412]: checking bus 2, device 7: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1.1/2-1.1.3/2-1.1.3.2"
+Nov 05 00:02:34 Ubu20 mtp-probe[412]: bus: 2, device: 7 was not an MTP device
+Nov 05 00:02:34 Ubu20 mtp-probe[414]: checking bus 2, device 8: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1.1/2-1.1.3/2-1.1.3.3"
+Nov 05 00:02:34 Ubu20 mtp-probe[414]: bus: 2, device: 8 was not an MTP device
+Nov 05 00:02:34 Ubu20 systemd-udevd[313]: Using default interface naming scheme 'v245'.
+Nov 05 00:02:34 Ubu20 systemd-udevd[313]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Nov 05 00:02:34 Ubu20 systemd-udevd[313]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Nov 05 00:02:35 Ubu20 mtp-probe[447]: checking bus 2, device 8: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1.1/2-1.1.3/2-1.1.3.3"
+Nov 05 00:02:35 Ubu20 mtp-probe[447]: bus: 2, device: 8 was not an MTP device
+Nov 05 00:02:35 Ubu20 systemd-udevd[308]: controlC0: Process '/usr/sbin/alsactl -E HOME=/run/alsa -E XDG_RUNTIME_DIR=/run/alsa/runtime restore 0' failed with exit code 99.
+Nov 05 00:02:35 Ubu20 systemd-udevd[314]: controlC1: Process '/usr/sbin/alsactl -E HOME=/run/alsa -E XDG_RUNTIME_DIR=/run/alsa/runtime restore 1' failed with exit code 99.
+Nov 05 00:02:35 Ubu20 mtp-probe[493]: checking bus 2, device 7: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1.1/2-1.1.3/2-1.1.3.2"
+Nov 05 00:02:35 Ubu20 mtp-probe[493]: bus: 2, device: 7 was not an MTP device
+Nov 05 00:02:35 Ubu20 systemd-udevd[324]: controlC2: Process '/usr/sbin/alsactl -E HOME=/run/alsa -E XDG_RUNTIME_DIR=/run/alsa/runtime restore 2' failed with exit code 99.
+-- Reboot --
+Nov 05 00:11:43 Ubu20 systemd[1]: Started udev Kernel Device Manager.
+Nov 05 00:11:43 Ubu20 systemd-udevd[312]: Using default interface naming scheme 'v245'.
+Nov 05 00:11:43 Ubu20 systemd-udevd[312]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Nov 05 00:11:43 Ubu20 systemd-udevd[312]: Could not set AlternativeName= or apply AlternativeNamesPolicy= on eno1: File exists
+Nov 05 00:11:43 Ubu20 systemd-udevd[312]: eno1: Could not apply link config, ignoring: File exists
+Nov 05 00:11:43 Ubu20 mtp-probe[354]: checking bus 1, device 4: "/sys/devices/pci0000:00/0000:00:1d.0/usb1/1-1/1-1.6"
+Nov 05 00:11:43 Ubu20 mtp-probe[354]: bus: 1, device: 4 was not an MTP device
+Nov 05 00:11:44 Ubu20 systemd-udevd[305]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Nov 05 00:11:44 Ubu20 systemd-udevd[302]: Using default interface naming scheme 'v245'.
+Nov 05 00:11:44 Ubu20 systemd-udevd[302]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Nov 05 00:11:44 Ubu20 systemd-udevd[311]: Using default interface naming scheme 'v245'.
+Nov 05 00:11:44 Ubu20 systemd-udevd[311]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Nov 05 00:11:44 Ubu20 mtp-probe[424]: checking bus 2, device 6: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1.1/2-1.1.4"
+Nov 05 00:11:44 Ubu20 mtp-probe[424]: bus: 2, device: 6 was not an MTP device
+Nov 05 00:11:44 Ubu20 mtp-probe[438]: checking bus 2, device 6: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1.1/2-1.1.4"
+Nov 05 00:11:44 Ubu20 mtp-probe[438]: bus: 2, device: 6 was not an MTP device
+Nov 05 00:11:45 Ubu20 mtp-probe[469]: checking bus 2, device 8: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1.1/2-1.1.3/2-1.1.3.3"
+Nov 05 00:11:45 Ubu20 mtp-probe[471]: checking bus 2, device 7: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1.1/2-1.1.3/2-1.1.3.2"
+Nov 05 00:11:45 Ubu20 mtp-probe[469]: bus: 2, device: 8 was not an MTP device
+Nov 05 00:11:45 Ubu20 mtp-probe[471]: bus: 2, device: 7 was not an MTP device
+Nov 05 00:11:45 Ubu20 mtp-probe[494]: checking bus 2, device 7: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1.1/2-1.1.3/2-1.1.3.2"
+Nov 05 00:11:45 Ubu20 mtp-probe[494]: bus: 2, device: 7 was not an MTP device
+Nov 05 00:11:45 Ubu20 mtp-probe[507]: checking bus 2, device 8: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1.1/2-1.1.3/2-1.1.3.3"
+Nov 05 00:11:45 Ubu20 mtp-probe[507]: bus: 2, device: 8 was not an MTP device
+Nov 05 07:32:02 Ubu20 systemd-udevd[5859]: Using default interface naming scheme 'v245'.
+Nov 05 07:32:02 Ubu20 systemd-udevd[5860]: Using default interface naming scheme 'v245'.
+Nov 05 07:32:02 Ubu20 systemd-udevd[5862]: regulatory.0: Process '/sbin/crda' failed with exit code 234.
+Nov 05 14:04:49 Ubu20 mtp-probe[22409]: checking bus 2, device 9: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2"
+Nov 05 14:04:49 Ubu20 mtp-probe[22409]: bus: 2, device: 9 was not an MTP device
+Nov 05 14:04:49 Ubu20 mtp-probe[22420]: checking bus 2, device 9: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2"
+Nov 05 14:04:49 Ubu20 mtp-probe[22420]: bus: 2, device: 9 was not an MTP device
+Nov 05 14:04:49 Ubu20 systemd-udevd[22406]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Nov 05 14:04:49 Ubu20 irattach[22421]: executing: '/sbin/modprobe irda0'
+Nov 05 14:04:49 Ubu20 irattach[22425]: executing: 'echo Ubu20 > /proc/sys/net/irda/devname'
+Nov 05 14:04:49 Ubu20 irattach[22425]: executing: 'echo 1 > /proc/sys/net/irda/discovery'
+Nov 05 14:04:49 Ubu20 irattach[22425]: Starting device irda0
+Nov 05 14:04:49 Ubu20 irattach[22425]: socket(AF_IRDA): Address family not supported by protocol
+Nov 05 14:04:49 Ubu20 irattach[22425]: Stopping device irda0
+Nov 05 14:04:49 Ubu20 irattach[22425]: socket(AF_IRDA): Address family not supported by protocol
+Nov 05 14:04:49 Ubu20 irattach[22425]: exiting ...
+lines 49-71/71 (END)
