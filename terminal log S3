@@ -2227,3 +2227,13 @@ marton adm cdrom sudo dip plugdev lpadmin lxd sambashare
 marton@Ubu20:~/Downloads/irda$ 
 
 reboot
+marton@Ubu20:~$ python3
+Python 3.8.10 (default, May 26 2023, 14:05:08) 
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import socket
+>>> socket.socket(family=socket.AF_IRDA)
+<socket.socket fd=3, family=AddressFamily.AF_IRDA, type=SocketKind.SOCK_STREAM, proto=0>
+>>> 
+
+
