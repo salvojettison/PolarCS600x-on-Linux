@@ -1,3 +1,51 @@
+In the meantime I have made a fresh Ubuntu 20.04 install. This does not have the built in irda stack anymore, but I can still get the irda-utils through package manager. One source of error less, while troubleshooting... This is now called Scenario 3.
+I have 
+terminal log: https://github.com/salvojettison/PolarCS600x-on-Linux/blob/main/terminal%20log%20S3
+journalctl -u systemd-udevd.service: https://github.com/salvojettison/PolarCS600x-on-Linux/blob/main/journalctl%20-u%20systemd-udevd.service%20S3
+udevadm monitor: https://github.com/salvojettison/PolarCS600x-on-Linux/blob/main/udevadm%20monitor%20S3
+
+And here is my general log of this whole journey: https://github.com/salvojettison/PolarCS600x-on-Linux/blob/main/00%20installation%20scenarios This includes the steps I do for Scenario 3.
+
+It gives however the same socket(AF_IRDA) error.
+
+> The socket(AF_IRDA) errors surprise me. Do you see the same a) when calling irattach manually and b) in Ubuntu 14.04? tail -f /var/log/messages should probably reveal the irattach output when it gets called.
+
+a) nothing new pops up in `udevadm monitor`
+b) i do not know how to check this as
+I do not have /var/log/messages
+
+> You said you have to call irattach manually in Linux Mint. For what to achieve?
+irattach I run manually only if the red LED of the IrDA device is not flashing. This also start things going on in irdadump.
+
+> I do not get the /dev lists. There's not even an ircomm0, but you said you're reading from that using cat
+If I run 'sudo modprobe ircomm-tty', this will add the ircommx in /dev. If I cat into this, there is some stuff going on in irdadump. I do not normally fo this, was just part of the journey of a lost sole trying to find his way...:) This was not necessary in Ubuntu 14.04 at all. This is probably a dead end anyways.
+
+> Regarding /proc/config.gz: Mhm, no configs module (loaded) in Ubuntu then. I think there's are plaintext /boot/config-$(uname -r) for the kernel that you could grep for CONFIG_CRC32. Anyway, I'm sure it's built-in and at least dmesg or something would SCREAM if it would be missing.
+You are absolutely right `/boot/config-5.15.0-88-generic` contains the following.
+`CONFIG_LIB_MEMNEQ=y
+CONFIG_CRC_CCITT=y
+CONFIG_CRC16=y
+CONFIG_CRC_T10DIF=y
+CONFIG_CRC_ITU_T=m
+CONFIG_CRC32=y
+# CONFIG_CRC32_SELFTEST is not set
+CONFIG_CRC32_SLICEBY8=y
+# CONFIG_CRC32_SLICEBY4 is not set
+# CONFIG_CRC32_SARWATE is not set
+# CONFIG_CRC32_BIT is not set
+CONFIG_CRC64=m
+CONFIG_CRC4=m
+CONFIG_CRC7=m
+CONFIG_LIBCRC32C=m
+CONFIG_CRC8=m
+CONFIG_XXHASH=y
+`
+
+> One thing that totally suprises me is ali-ircc showing up at some points: In the first installation udev logs you see irattach trying to load it (but failing to find it) after it failed to parse /etc/modprobe.d/irda-utils.conf. The udevadm output also shows that it gets loaded (and immediately removed again). That does not make any sense to me, assuming that the output is from the second installation. I do not know of anything that defaults to ali-ircc (well, it's alphabetically the first FIR driver 🤷), neither in irda-utils code nor Ubuntu-added stuff. I'm not sure what exactly gets written to /etc/default/irda-utils and /etc/modprobe.d/irda-utils.conf, but it should probably be the same as on Ubuntu 14.04.
+
+ali-ircc does not show up in Scenario 3 installation anymore! 
+
+
 ------------------------------------------------------
 Scenario 3 Ubuntu 20.04
 0.) fresh install
