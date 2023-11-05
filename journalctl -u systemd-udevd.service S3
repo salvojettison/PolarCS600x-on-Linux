@@ -71,3 +71,50 @@ Nov 05 14:04:49 Ubu20 irattach[22425]: Stopping device irda0
 Nov 05 14:04:49 Ubu20 irattach[22425]: socket(AF_IRDA): Address family not supported by protocol
 Nov 05 14:04:49 Ubu20 irattach[22425]: exiting ...
 lines 49-71/71 (END)
+-- Reboot --
+Nov 05 14:48:31 Ubu20 systemd[1]: Started udev Kernel Device Manager.
+Nov 05 14:48:31 Ubu20 systemd-udevd[320]: Using default interface naming scheme 'v245'.
+Nov 05 14:48:31 Ubu20 systemd-udevd[320]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Nov 05 14:48:31 Ubu20 systemd-udevd[320]: Could not set AlternativeName= or apply AlternativeNamesPolicy= on eno1: File exists
+Nov 05 14:48:31 Ubu20 systemd-udevd[320]: eno1: Could not apply link config, ignoring: File exists
+Nov 05 14:48:31 Ubu20 mtp-probe[397]: checking bus 2, device 3: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2"
+Nov 05 14:48:31 Ubu20 mtp-probe[397]: bus: 2, device: 3 was not an MTP device
+Nov 05 14:48:31 Ubu20 mtp-probe[453]: checking bus 1, device 4: "/sys/devices/pci0000:00/0000:00:1d.0/usb1/1-1/1-1.6"
+Nov 05 14:48:31 Ubu20 mtp-probe[453]: bus: 1, device: 4 was not an MTP device
+Nov 05 14:48:32 Ubu20 systemd-udevd[320]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Nov 05 14:48:32 Ubu20 mtp-probe[483]: checking bus 2, device 7: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1.1/2-1.1.4"
+Nov 05 14:48:32 Ubu20 mtp-probe[483]: bus: 2, device: 7 was not an MTP device
+Nov 05 14:48:32 Ubu20 mtp-probe[500]: checking bus 2, device 9: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1.1/2-1.1.3/2-1.1.3.3"
+Nov 05 14:48:32 Ubu20 mtp-probe[500]: bus: 2, device: 9 was not an MTP device
+Nov 05 14:48:32 Ubu20 mtp-probe[503]: checking bus 2, device 8: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1.1/2-1.1.3/2-1.1.3.2"
+Nov 05 14:48:32 Ubu20 mtp-probe[503]: bus: 2, device: 8 was not an MTP device
+Nov 05 14:48:32 Ubu20 systemd-udevd[338]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Nov 05 14:48:32 Ubu20 irattach[514]: executing: '/sbin/modprobe irda0'
+Nov 05 14:48:32 Ubu20 irattach[520]: executing: 'echo Ubu20 > /proc/sys/net/irda/devname'
+Nov 05 14:48:32 Ubu20 irattach[520]: executing: 'echo 1 > /proc/sys/net/irda/discovery'
+Nov 05 14:48:32 Ubu20 irattach[520]: Starting device irda0
+Nov 05 14:48:32 Ubu20 irattach[520]: socket(AF_IRDA): Address family not supported by protocol
+Nov 05 14:48:32 Ubu20 irattach[520]: Stopping device irda0
+Nov 05 14:48:32 Ubu20 irattach[520]: socket(AF_IRDA): Address family not supported by protocol
+Nov 05 14:48:32 Ubu20 irattach[520]: exiting ...
+Nov 05 14:48:32 Ubu20 systemd-udevd[328]: Using default interface naming scheme 'v245'.
+Nov 05 14:48:32 Ubu20 systemd-udevd[328]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Nov 05 14:48:32 Ubu20 systemd-udevd[320]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+lines 75-100/100 (END)
+
+after running python code
+Nov 05 16:30:22 Ubu20 mtp-probe[4903]: checking bus 2, device 10: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2"
+Nov 05 16:30:22 Ubu20 mtp-probe[4903]: bus: 2, device: 10 was not an MTP device
+Nov 05 16:30:22 Ubu20 systemd-udevd[4900]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Nov 05 16:30:22 Ubu20 irattach[4909]: executing: '/sbin/modprobe irda0'
+Nov 05 16:30:22 Ubu20 irattach[4915]: executing: 'echo Ubu20 > /proc/sys/net/irda/devname'
+Nov 05 16:30:22 Ubu20 irattach[4915]: executing: 'echo 1 > /proc/sys/net/irda/discovery'
+Nov 05 16:30:22 Ubu20 irattach[4915]: Starting device irda0
+Nov 05 16:30:22 Ubu20 irattach[4915]: socket(AF_IRDA): Address family not supported by protocol
+Nov 05 16:30:22 Ubu20 irattach[4915]: Stopping device irda0
+Nov 05 16:30:22 Ubu20 irattach[4915]: socket(AF_IRDA): Address family not supported by protocol
+Nov 05 16:30:22 Ubu20 irattach[4915]: exiting ...
+Nov 05 16:30:22 Ubu20 mtp-probe[4921]: checking bus 2, device 10: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2"
+Nov 05 16:30:22 Ubu20 mtp-probe[4921]: bus: 2, device: 10 was not an MTP device
+lines 88-113/113 (END)
+
