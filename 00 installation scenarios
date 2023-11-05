@@ -1,19 +1,29 @@
 Scenario 3 Ubuntu 20.04
 0.) fresh install
 1.) irda stack stack have been removed after 2018 from linux kernel (v 4.17)
-    - clone the repo:
-        - git clone https://github.com/cschramm/irda.git
-    - cd intto the created folder (irda)
-    - BUILD
-        - make -C src
-    - DKMS
-        - autoconf -f && ./configure
-        - sudo dkms add src
-        - sudo dkms install "irda/$(git show --pretty=format:"%cd~%h" --date="format:%Y%m%d" | head -1)"
+	- clone the repo:
+		- git clone https://github.com/cschramm/irda.git
+	- cd into the created folder (irda)
+	- BUILD
+		- make -C src
+	- DKMS
+		- autoconf -f && ./configure
+		- sudo dkms add src
+		- sudo dkms install "irda/$(git show --pretty=format:"%cd~%h" --date="format:%Y%m%d" | head -1)"
 
+2.) installing irda-utils
+	    - sudo apt-get install irda-utils
 
+3.) editing /etc/modprobe.d/irda-utils.conf 
+	- sudo nano /etc/modprobe.d/irda-utils.conf
+		alias irda0 mcs7780   # add line to the end of file
 
-
+4.) editing /etc/default/irda-utils
+	- sudo nano /etc/default/irda-utils
+        - change the following
+            ENABLE="true"
+            DEVICE="irda0"
+            MAX_BAUD_RATE="9600"
 
 
 I have made these steps to make IrDA on Linux Mint to work
@@ -69,7 +79,7 @@ irda                  270336  1 mcs7780
     !Maybe try to install netatalk for appletalk protocol: https://help.ubuntu.com/community/AppleTalk
     - clone the repo:
         - git clone https://github.com/cschramm/irda.git
-    - cd intto the created folder (irda)
+    - cd into the created folder (irda)
     - BUILD
         - make -C src
     - DKMS
