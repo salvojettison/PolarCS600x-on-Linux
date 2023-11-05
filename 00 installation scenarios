@@ -1,3 +1,4 @@
+------------------------------------------------------
 Scenario 3 Ubuntu 20.04
 0.) fresh install
 1.) irda stack stack have been removed after 2018 from linux kernel (v 4.17)
@@ -49,7 +50,7 @@ Scenario 3 Ubuntu 20.04
 7. - sudo irattach irda0 -s
 
 8. reboot
-
+------------------------------------------------------
 
 
 I have made these steps to make IrDA on Linux Mint to work
