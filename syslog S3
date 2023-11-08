@@ -1,0 +1,36 @@
+Ubu20
+plug in irda  
+Nov  8 18:03:58 Ubu20 kernel: [  657.426097] usb 2-2: new full-speed USB device number 11 using xhci_hcd
+Nov  8 18:03:58 Ubu20 kernel: [  657.578581] usb 2-2: New USB device found, idVendor=9710, idProduct=7780, bcdDevice= 0.01
+Nov  8 18:03:58 Ubu20 kernel: [  657.578596] usb 2-2: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Nov  8 18:03:58 Ubu20 NetworkManager[793]: <info>  [1699463038.7015] manager: (irda0): new Generic device (/org/freedesktop/NetworkManager/Devices/7)
+Nov  8 18:03:58 Ubu20 mtp-probe: checking bus 2, device 11: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2"
+Nov  8 18:03:58 Ubu20 mtp-probe: bus: 2, device: 11 was not an MTP device
+Nov  8 18:03:58 Ubu20 systemd-udevd[2350]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Nov  8 18:03:58 Ubu20 irattach: executing: '/sbin/modprobe irda0'
+Nov  8 18:03:58 Ubu20 irattach: executing: 'echo Ubu20 > /proc/sys/net/irda/devname'
+Nov  8 18:03:58 Ubu20 irattach: executing: 'echo 1 > /proc/sys/net/irda/discovery'
+Nov  8 18:03:58 Ubu20 irattach: Starting device irda0
+Nov  8 18:03:58 Ubu20 irattach: socket(AF_IRDA): Address family not supported by protocol
+Nov  8 18:03:58 Ubu20 irattach: Stopping device irda0
+Nov  8 18:03:58 Ubu20 irattach: socket(AF_IRDA): Address family not supported by protocol
+Nov  8 18:03:58 Ubu20 irattach: exiting ...
+Nov  8 18:03:58 Ubu20 mtp-probe: checking bus 2, device 11: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2"
+Nov  8 18:03:58 Ubu20 mtp-probe: bus: 2, device: 11 was not an MTP device
+Nov  8 18:04:01 Ubu20 ModemManager[891]: <info>  [base-manager] couldn't check support for device '/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2': not supported by any plugin
+
+
+manual irattach
+Nov  8 18:05:41 Ubu20 irattach: executing: '/sbin/modprobe irda0'
+Nov  8 18:05:41 Ubu20 irattach: executing: 'echo Ubu20 > /proc/sys/net/irda/devname'
+Nov  8 18:05:41 Ubu20 irattach: executing: 'echo 1 > /proc/sys/net/irda/discovery'
+Nov  8 18:05:41 Ubu20 irattach: Starting device irda0
+
+unplug
+Nov  8 18:06:50 Ubu20 kernel: [  828.950558] usb 2-2: USB disconnect, device number 11
+Nov  8 18:06:50 Ubu20 kernel: [  828.950833] failed tx_urb: -19
+Nov  8 18:06:50 Ubu20 gnome-shell[1319]: Removing a network device that was not added
+Nov  8 18:06:50 Ubu20 irattach: got SIGTERM or SIGINT
+Nov  8 18:06:50 Ubu20 irattach: Stopping device irda0
+Nov  8 18:06:50 Ubu20 irattach: ioctl(SIOCGIFFLAGS): No such device
+Nov  8 18:06:50 Ubu20 irattach: exiting ...
