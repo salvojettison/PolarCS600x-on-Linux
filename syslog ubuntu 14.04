@@ -1,0 +1,26 @@
+Plug in irda
+Nov  8 17:22:44 DMLaptop mtp-probe: checking bus 2, device 9: "/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2"
+Nov  8 17:22:44 DMLaptop mtp-probe: bus: 2, device: 9 was not an MTP device
+Nov  8 17:22:44 DMLaptop kernel: [   98.327109] usb 2-2: New USB device found, idVendor=9710, idProduct=7780
+Nov  8 17:22:44 DMLaptop kernel: [   98.327112] usb 2-2: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Nov  8 17:22:44 DMLaptop kernel: [   98.344849] NET: Registered protocol family 23
+Nov  8 17:22:44 DMLaptop kernel: [   98.346774] usbcore: registered new interface driver mcs7780
+Nov  8 17:22:44 DMLaptop irattach: executing: '/sbin/modprobe irda0'
+Nov  8 17:22:44 DMLaptop irattach: executing: 'echo DMLaptop > /proc/sys/net/irda/devname'
+Nov  8 17:22:44 DMLaptop NetworkManager[839]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/pci0000:00/0000:00:14.0/usb2/2-2/2-2:1.0/net/irda0, iface: irda0)
+Nov  8 17:22:44 DMLaptop NetworkManager[839]:    SCPlugin-Ifupdown: device added (path: /sys/devices/pci0000:00/0000:00:14.0/usb2/2-2/2-2:1.0/net/irda0, iface: irda0): no ifupdown configuration found.
+Nov  8 17:22:44 DMLaptop irattach: executing: 'echo 1 > /proc/sys/net/irda/discovery'
+Nov  8 17:22:44 DMLaptop irattach: Starting device irda0
+Nov  8 17:22:47 DMLaptop ModemManager[801]: <warn>  Couldn't find support for device at '/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2': not supported by any plugin
+
+Unplug
+Nov  8 17:25:03 DMLaptop avahi-daemon[753]: Withdrawing workstation service for irda0.
+Nov  8 17:25:03 DMLaptop kernel: [  237.263458] usb 2-2: USB disconnect, device number 9
+Nov  8 17:25:03 DMLaptop irattach: got SIGTERM or SIGINT
+Nov  8 17:25:03 DMLaptop irattach: Stopping device irda0
+Nov  8 17:25:03 DMLaptop NetworkManager[839]:    SCPlugin-Ifupdown: devices removed (path: /sys/devices/pci0000:00/0000:00:14.0/usb2/2-2/2-2:1.0/net/irda0, iface: irda0)
+Nov  8 17:25:03 DMLaptop irattach: ioctl(SIOCGIFFLAGS): No such device
+Nov  8 17:25:03 DMLaptop irattach: exiting ...
+
+
+
