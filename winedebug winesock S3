@@ -1,5 +1,25 @@
+if no linking, closes after about half a minute
 marton@Ubu20:~$ WINEDEBUG=+winsock wine ~/.wine/drive_c/'Program Files (x86)'/Polar/'Polar ProTrainer'/'Polar 32.exe'
 0009:trace:winsock:DllMain 0x7e340000 0x1 0x32fd24
+0009:err:rebar:REBAR_MinimizeBand Illegal MinimizeBand, requested=1, current band count=0
+0009:fixme:wincodecs:JpegDecoder_Frame_CopyPalette (0x26bf084,0x25712d0): stub
+002a:trace:winsock:DllMain 0x7e340000 0x2 (nil)
+002a:trace:winsock:WSAStartup verReq=101
+002a:trace:winsock:WSAStartup succeeded starts: 1
+002a:trace:winsock:WS_socket af=26 type=1 protocol=0
+002a:trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+002a:trace:winsock:WSASocketW 	created 00ec
+002a:trace:winsock:WS_bind socket 00ec, ptr 0x1006be60 { family AF_IRDA, addr 00000000, name SampleIrDAService }, length 32
+002a:fixme:comm:set_queue_size insize 1048 outsize 128 unimplemented stub
+002b:trace:winsock:DllMain 0x7e340000 0x2 (nil)
+002a:trace:winsock:DllMain 0x7e340000 0x3 (nil)
+0009:fixme:wincodecs:JpegDecoder_Frame_CopyPalette (0x26bda04,0x25634d0): stub
+
+
+
+if linking Com1 to ircomm0, closes after about a second
+marton@Ubu20:~$ WINEDEBUG=+winsock wine ~/.wine/drive_c/'Program Files (x86)'/Polar/'Polar ProTrainer'/'Polar 32.exe'
+0009:tracehttps://github.com/salvojettison/PolarCS600x-on-Linux/edit/main/winedebug%20winesock%20S3:winsock:DllMain 0x7e340000 0x1 0x32fd24
 0009:err:rebar:REBAR_MinimizeBand Illegal MinimizeBand, requested=1, current band count=0
 0009:fixme:wincodecs:JpegDecoder_Frame_CopyPalette (0x26bf084,0x25712d0): stub
 002a:trace:winsock:DllMain 0x7e340000 0x2 (nil)
