@@ -1,0 +1,15 @@
+marton@Ubu20:~$ WINEDEBUG=+winsock wine ~/.wine/drive_c/'Program Files (x86)'/Polar/'Polar ProTrainer'/'Polar 32.exe'
+0009:trace:winsock:DllMain 0x7e340000 0x1 0x32fd24
+0009:err:rebar:REBAR_MinimizeBand Illegal MinimizeBand, requested=1, current band count=0
+0009:fixme:wincodecs:JpegDecoder_Frame_CopyPalette (0x26bf084,0x25712d0): stub
+002a:trace:winsock:DllMain 0x7e340000 0x2 (nil)
+002a:trace:winsock:WSAStartup verReq=101
+002a:trace:winsock:WSAStartup succeeded starts: 1
+002a:trace:winsock:WS_socket af=26 type=1 protocol=0
+002a:trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+002a:trace:winsock:WSASocketW 	created 00ec
+002a:trace:winsock:WS_bind socket 00ec, ptr 0x1006be60 { family AF_IRDA, addr 00000000, name SampleIrDAService }, length 32
+002b:trace:winsock:DllMain 0x7e340000 0x2 (nil)
+002b:trace:winsock:DllMain 0x7e340000 0x3 (nil)
+002a:trace:winsock:DllMain 0x7e340000 0x3 (nil)
+0009:fixme:wincodecs:JpegDecoder_Frame_CopyPalette (0x256dcb4,0x255fb10): stub
