@@ -1,0 +1,1603 @@
+marton@DMLaptop:~$ WINEDEBUG=+winsock wine ~/.wine/drive_c/'Program Files (x86)'/Polar/'Polar ProTrainer'/'Polar 32.exe'
+trace:winsock:DllMain 0x7e110000 0x1 0x1
+err:rebar:REBAR_MinimizeBand Illegal MinimizeBand, requested=1, current band count=0
+fixme:wincodecs:JpegDecoder_Frame_CopyPalette (0x185a34,0x15c3f0): stub
+trace:winsock:DllMain 0x7e110000 0x2 (nil)
+trace:winsock:WSAStartup verReq=101
+trace:winsock:WSAStartup succeeded
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 00b4
+trace:winsock:WS_bind socket 00b4, ptr 0x1006be60 { family AF_IRDA, addr 00000000, name SampleIrDAService }, length 32
+trace:winsock:WS_listen socket 00b4, backlog 2
+trace:winsock:WS_closesocket socket 00b4
+trace:winsock:DllMain 0x7e110000 0x2 (nil)
+trace:winsock:DllMain 0x7e110000 0x2 (nil)
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 00bc
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 00bc, level 0xff, name 0x10, ptr 0x3abe870, len 297
+trace:winsock:WS_getsockopt IRLMP_ENUMDEVICES: 1 devices found:
+trace:winsock:WS_getsockopt saddr = 9263b06f, daddr = 73cf7e19, info = Polar CS600X, hints = 8204
+trace:winsock:WS_connect socket 00bc, ptr 0x3abe850 { family AF_IRDA, addr 197ecf73, name HRM }, length 32
+warn:winsock:wsaErrno errno 113, (No route to host).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 00c0
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 00c0, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 00c4
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 00c4, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 00c8
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 00c8, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 00cc
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 00cc, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 00d0
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 00d0, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 00d4
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 00d4, level 0xff, name 0x10, ptr 0x3abe870, len 297
+trace:winsock:WS_getsockopt IRLMP_ENUMDEVICES: 1 devices found:
+trace:winsock:WS_getsockopt saddr = 9263b06f, daddr = 73cf7e19, info = Polar CS600X, hints = 8204
+trace:winsock:WS_connect socket 00d4, ptr 0x3abe850 { family AF_IRDA, addr 197ecf73, name HRM }, length 32
+warn:winsock:wsaErrno errno 113, (No route to host).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 00d8
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 00d8, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 00dc
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 00dc, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 00e0
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 00e0, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 00e4
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 00e4, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 00e8
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 00e8, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 00ec
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 00ec, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 00f0
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 00f0, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 00f4
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 00f4, level 0xff, name 0x10, ptr 0x3abe870, len 297
+trace:winsock:WS_getsockopt IRLMP_ENUMDEVICES: 1 devices found:
+trace:winsock:WS_getsockopt saddr = 9263b06f, daddr = 73cf7e19, info = Polar CS600X, hints = 8204
+trace:winsock:WS_connect socket 00f4, ptr 0x3abe850 { family AF_IRDA, addr 197ecf73, name HRM }, length 32
+warn:winsock:wsaErrno errno 113, (No route to host).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 00f8
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 00f8, level 0xff, name 0x10, ptr 0x3abe870, len 297
+trace:winsock:WS_getsockopt IRLMP_ENUMDEVICES: 1 devices found:
+trace:winsock:WS_getsockopt saddr = 9263b06f, daddr = 73cf7e19, info = Polar CS600X, hints = 8204
+trace:winsock:WS_connect socket 00f8, ptr 0x3abe850 { family AF_IRDA, addr 197ecf73, name HRM }, length 32
+warn:winsock:wsaErrno errno 113, (No route to host).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 00fc
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 00fc, level 0xff, name 0x10, ptr 0x3abe870, len 297
+trace:winsock:WS_getsockopt IRLMP_ENUMDEVICES: 1 devices found:
+trace:winsock:WS_getsockopt saddr = 9263b06f, daddr = 73cf7e19, info = Polar CS600X, hints = 8204
+trace:winsock:WS_connect socket 00fc, ptr 0x3abe850 { family AF_IRDA, addr 197ecf73, name HRM }, length 32
+warn:winsock:wsaErrno errno 113, (No route to host).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 0100
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 0100, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 0104
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 0104, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 0108
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 0108, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 010c
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 010c, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 0110
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 0110, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 0114
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 0114, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 0118
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 0118, level 0xff, name 0x10, ptr 0x3abe870, len 297
+trace:winsock:WS_getsockopt IRLMP_ENUMDEVICES: 1 devices found:
+trace:winsock:WS_getsockopt saddr = 9263b06f, daddr = 73cf7e19, info = Polar CS600X, hints = 8204
+trace:winsock:WS_connect socket 0118, ptr 0x3abe850 { family AF_IRDA, addr 197ecf73, name HRM }, length 32
+warn:winsock:wsaErrno errno 113, (No route to host).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 011c
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 011c, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 0120
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 0120, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 0124
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 0124, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 0128
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 0128, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 012c
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 012c, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 0130
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 0130, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 0134
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 0134, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 0138
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 0138, level 0xff, name 0x10, ptr 0x3abe870, len 297
+trace:winsock:WS_getsockopt IRLMP_ENUMDEVICES: 1 devices found:
+trace:winsock:WS_getsockopt saddr = 9263b06f, daddr = 73cf7e19, info = Polar CS600X, hints = 8204
+trace:winsock:WS_connect socket 0138, ptr 0x3abe850 { family AF_IRDA, addr 197ecf73, name HRM }, length 32
+warn:winsock:wsaErrno errno 113, (No route to host).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 013c
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 013c, level 0xff, name 0x10, ptr 0x3abe870, len 297
+trace:winsock:WS_getsockopt IRLMP_ENUMDEVICES: 1 devices found:
+trace:winsock:WS_getsockopt saddr = 9263b06f, daddr = 73cf7e19, info = Polar CS600X, hints = 8204
+trace:winsock:WS_connect socket 013c, ptr 0x3abe850 { family AF_IRDA, addr 197ecf73, name HRM }, length 32
+warn:winsock:wsaErrno errno 113, (No route to host).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 0140
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 0140, level 0xff, name 0x10, ptr 0x3abe870, len 297
+trace:winsock:WS_getsockopt IRLMP_ENUMDEVICES: 1 devices found:
+trace:winsock:WS_getsockopt saddr = 9263b06f, daddr = 73cf7e19, info = Polar CS600X, hints = 8204
+trace:winsock:WS_connect socket 0140, ptr 0x3abe850 { family AF_IRDA, addr 197ecf73, name HRM }, length 32
+warn:winsock:wsaErrno errno 113, (No route to host).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 0144
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 0144, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 0148
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 0148, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 014c
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 014c, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 0150
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 0150, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 0154
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 0154, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 0158
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 0158, level 0xff, name 0x10, ptr 0x3abe870, len 297
+warn:winsock:wsaErrno errno 11, (Resource temporarily unavailable).
+trace:winsock:WS_socket af=26 type=1 protocol=0
+trace:winsock:WSASocketA af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW af=26 type=1 protocol=0 protocol_info=(nil) group=0 flags=0x1
+trace:winsock:WSASocketW 	created 015c
+trace:winsock:_remap_optname level=255, optname=16
+trace:winsock:WS_getsockopt socket: 015c, level 0xff, name 0x10, ptr 0x3abe870, len 297
+trace:winsock:WS_getsockopt IRLMP_ENUMDEVICES: 1 devices found:
+trace:winsock:WS_getsockopt saddr = 9263b06f, daddr = 73cf7e19, info = Polar CS600X, hints = 8204
+trace:winsock:WS_connect socket 015c, ptr 0x3abe850 { family AF_IRDA, addr 197ecf73, name HRM }, length 32
+warn:winsock:wsaErrno errno 115, (Operation now in progress).
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 1 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=69, options=0
+trace:winsock:WS2_recv_base  -> 32 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 8 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=69, options=0
+trace:winsock:WS2_recv_base  -> 49 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=69, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:DllMain 0x7e110000 0x2 (nil)
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 8 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 20 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 8 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 27 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 8 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 76 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 8 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 126 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 8 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 58 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 8 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 20 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 8 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 10 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 8 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 7 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 10 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 2 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 8 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 7 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 9 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 2 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 1 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 2 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 10 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 2 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 8 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 58 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 250 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 2 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 250 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 2 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 250 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 2 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 250 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 2 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 250 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 2 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 250 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 2 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 250 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 2 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 15 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 2 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 8 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 58 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 250 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 2 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 250 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 2 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 37 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 2 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 9 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 2 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 1 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 2 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 4 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 62 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 8 bytes
+trace:winsock:WS2_recv_base socket 015c, wsabuf 0x3bbe978, nbufs 1, flags 0, from (nil), fromlen -1, ovl (nil), func (nil)
+trace:winsock:WS2_recv_base fd=71, options=0
+trace:winsock:WS2_recv_base  -> 93 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 1 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 1 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 1 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 1 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 1 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=71, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:DllMain 0x7e110000 0x3 (nil)
+trace:winsock:WS2_sendto socket 015c, wsabuf 0x3abe968, nbufs 1, flags 0, to (nil), tolen 0, ovl (nil), func (nil)
+trace:winsock:WS2_sendto fd=15, options=0
+trace:winsock:WS2_sendto  -> 0 bytes
+trace:winsock:WS_closesocket socket 015c
+trace:winsock:DllMain 0x7e110000 0x3 (nil)
+trace:winsock:DllMain 0x7e110000 0x3 (nil)
+fixme:wincodecs:JpegDecoder_Frame_CopyPalette (0x1f0ecc,0x171b50): stub
+trace:winsock:DllMain 0x7e110000 0x3 (nil)
