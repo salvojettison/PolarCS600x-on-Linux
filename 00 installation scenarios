@@ -233,7 +233,7 @@ S710 tool: https://code.google.com/archive/p/s710/
 Alternative to PP5 http://www.traininglab.com/test/traininglab-pro-software/
 Polar F55 link collection https://web.archive.org/web/20110115022645/http://users.tkk.fi/jjvayryn/polar_f55_hrm.html
 Mapping com port https://wiki.winehq.org/Wine_User%27s_Guide#Serial_and_Parallel_Ports
-irdadump for winsows: http://www.ircomm2k.de/English/
+irdadump for windows: http://www.ircomm2k.de/English/
 
 format előtt a böngészőből
 https://forums.linuxmint.com/viewtopic.php?t=68614
@@ -241,6 +241,7 @@ http://www.jbackes.de/wiki/doku.php?id=polar_protrainer_5_wine
 https://guriandersen.no/polar-pulse-watch-infrared-communication-and-ubuntu/
 https://manpages.debian.org/stretch/irda-utils/irattach.8.en.html
 https://www.hpl.hp.com/personal/Jean_Tourrilhes/IrDA/IrDA.html
+https://tldp.org/HOWTO/Infrared-HOWTO/index.html
 https://www.opennet.ru/docs/HOWTO/Infrared-HOWTO/
 https://web.archive.org/web/20080613224859/http://www.traduc.org/docs/HOWTO/lecture/IR-HOWTO.html
 https://web.archive.org/web/20050308092516/http://www.freenix.org/unix/linux/HOWTO/IR-HOWTO.html#toc1
