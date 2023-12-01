@@ -1,3 +1,9 @@
+Wine
+    Source: https://www.linuxmint.com/rel_victoria_cinnamon.php
+    To install the complete version of WINE, open a terminal and type:
+        - apt install wine-installer
+
+
 ------------------------------------------------------
 Scenario 3 Ubuntu 20.04
 0.) fresh install
