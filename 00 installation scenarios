@@ -444,3 +444,8 @@ Result
 
 I did a 2nd installation where I don't try to `make install`, but I directly install the downloaded .dev. That is where I got the result of 'Connection port couldn't get opened'.
 
+https://forum.lazarus.freepascal.org/index.php?topic=26194.0
+Some theory:
+Most likely and someone already confirmed the IR to USB adapter emulates a RS232 (COM) port. I windows it can be checked the following way: when the device manager is open, a new serial port shall be shown when the device is plugged in and respectively it will disappear when it is unplugged. If so, go get TLazSerial. Pay attention, that the latest version is not in the first page of the forum.
+After that, you have to use a RS232 sniffer. Plug in the IR adapter, check in the device manager which COM port number is assigned to it. Start the sniffer on that port and run the Polar software. Check what they are talking to each other and try to understand it.
+Ask for additional assistance, if needed.
